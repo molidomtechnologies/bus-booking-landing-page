@@ -1,0 +1,395 @@
+:root {
+    /* colors */
+    --blue: #2465C2;
+    --red: #F66A6D;
+    --white: #ffffff;
+    --background: #F9F7F7;
+    --bigText: 32px;
+    --large-text: 24px;
+    --medium-text: 18px;
+    --small-text: 14px;
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    background-color: var(--background);
+    width: auto;
+}
+
+header {
+    background-color: var(--white);
+    margin-right: 120px !important;
+    margin-left: 120px !important;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.language {
+    margin-left: 880px
+}
+
+
+.navbar-brand {
+    color: black;
+
+}
+
+main {
+    margin-right: 120px !important;
+    margin-left: 120px !important;
+}
+
+.hero-text {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.platform {
+    color: var(--blue);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.everything {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: var(--small-text);
+    text-align: center;
+    padding-left: 180px;
+    padding-right: 180px;
+
+}
+
+
+.hero-text .btn {
+    background-color: var(--blue) !important;
+    font-size: var(--small-text);
+    border: 0px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.bloggers {
+    min-height: 70vh;
+    /* background-color: var(--red); */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 575.98px) {
+        font-size: clamp(8px, 10px, 12px);
+    }
+}
+
+.blog-title {
+    min-height: 10vh;
+    width: 40vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.465);
+    border-radius: 100px;
+    margin-left: 260px;
+    font-size: var(--small-text);
+
+}
+
+.bloggers-quote {
+    min-height: 50vh;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.quotes {
+    height: 40vh;
+    /* background-color: cyan; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px 30px;
+}
+
+.quotes p {
+    font-size: var(--small-text);
+}
+
+.profile {
+    display: flex;
+    margin-top: 30px;
+}
+
+.profile-info {
+    margin-left: 15px;
+}
+
+.rental {
+    min-height: 45vh;
+    width: 100%;
+    box-shadow: 10px 10px 55px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-rental {
+    min-height: 40vh;
+    /* background-color: #2465C2; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-rental h1 {
+    font-size: 36px;
+}
+
+.right-rental {
+    height: 40vh;
+    /* background-color: #F66A6D; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.right-rental button {
+    padding: 10px 60px;
+    color: var(--white);
+    font-size: var(--small-text);
+    background-color: var(--blue);
+}
+
+.download {
+    height: 80vh;
+    width: 100%;
+    /* background-color: #2465C2; */
+    margin-top: 60px;
+    display: flex;
+}
+
+
+.d-left {
+    height: 80vh;
+    width: 50%;
+    /* background-color: #F66A6D; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-right {
+    height: 80vh;
+    width: 50%;
+    /* background-color: teal; */
+    padding: 120px 50px;
+
+}
+
+.d-right h1 {
+    font-size: 36px;
+}
+
+.d-right p {
+    font-size: var(--small-text);
+    margin-top: 20px;
+}
+
+.d-type {
+    margin-top: 60px;
+}
+
+
+footer {
+    min-height: 10vh;
+    width: 100%;
+    /* background-color: #2465C2; */
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 576px) {
+    :root {
+        --bigText: 24px;
+        --large-text: 18px;
+        --medium-text: 14px;
+        --small-text: 12px;
+    }
+
+    header {
+        margin: 0 !important;
+    }
+
+    .language {
+        margin-left: 0 !important;
+    }
+
+    .hero-text {
+        height: 60vh;
+        margin-top: 50px;
+        width: 100% !important;
+    }
+
+    .platform,
+    .everything {
+        font-size: var(--large-text);
+    }
+
+    .hero-text p {
+        padding: 0px;
+    }
+
+    main {
+        margin: 0 !important;
+    }
+
+    .bloggers-quote {
+        display: block;
+        background-color: #ffffff;
+
+    }
+
+    .bloggers {
+        margin-top: 20px;
+    }
+
+    .quotes {
+        margin-top: 5px;
+        height: 30vh;
+    }
+
+    .profile {
+        margin-top: 5px;
+    }
+
+    .blog-title {
+        width: 80vw !important;
+        margin-left: 10px;
+    }
+
+    .rental {
+        flex-direction: column;
+        align-items: center;
+        /* background-color: yellow; */
+        margin-top: 50px;
+    }
+
+    .left-rental {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        min-height: 30vh;
+        /* background-color: #F66A6D; */
+    }
+
+    .left-rental h1 {
+        font-size: var(--large-text);
+    }
+
+    .left-rental p {
+        font-size: var(--small-text);
+        margin-top: 10px;
+    }
+
+    .right-rental {
+        width: 90%;
+        height: 10vh;
+        margin-top: 20px;
+        /* background-color: aqua; */
+        margin-top: 0px;
+    }
+
+    .right-rental button {
+        padding: 10px 30px;
+        font-size: var(--small-text);
+    }
+
+    .download {
+        flex-direction: column;
+        align-items: center;
+        min-height: 110vh;
+    }
+
+    .d-left {
+        width: 90%;
+    }
+
+    .d-left img {
+        margin-top: 50px;
+        height: 20em;
+    }
+
+    .d-right {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .d-right h1 {
+        font-size: var(--large-text);
+    }
+
+    .d-right p {
+        font-size: var(--small-text);
+        margin-top: 10px;
+    }
+
+    .d-type {
+        margin-top: 20px;
+    }
+
+    .d-type img {
+        margin-top: 10px;
+    }
+
+    footer {
+        margin-top: 0px;
+        display: block;
+    }
+
+    footer h4 {
+        text-align: center;
+    }
+
+    .f-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer nav ul li a {
+        font-size: var(--small-text);
+    }
+
+    footer p {
+        font-size: var(--small-text);
+        text-align: center;
+    }
+
+}
