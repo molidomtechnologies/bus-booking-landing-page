@@ -234,10 +234,10 @@ footer {
 }
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 640px) {
     :root {
         --bigText: 24px;
-        --large-text: 18px;
+        --large-text: 20px;
         --medium-text: 14px;
         --small-text: 12px;
     }
@@ -252,7 +252,7 @@ footer {
 
     .hero-text {
         height: 60vh;
-        margin-top: 50px;
+        margin-top: 10px;
         width: 100% !important;
     }
 
@@ -276,7 +276,7 @@ footer {
     }
 
     .bloggers {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .quotes {
@@ -291,6 +291,7 @@ footer {
     .blog-title {
         width: 80vw !important;
         margin-left: 10px;
+        text-align: center;
     }
 
     .rental {
