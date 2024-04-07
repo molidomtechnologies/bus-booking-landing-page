@@ -1,3 +1,5 @@
+import MobileAppComponent from "./Components/MobileAppComponent"
+import TestimonialComponent from "./Components/TestimonialComponent"
 import LayOutComponent from "./Layout/Index"
 
 
@@ -7,7 +9,8 @@ function App() {
   return (
     <>
       <LayOutComponent>
-        <h1>App</h1>
+        <TestimonialComponent />
+        <MobileAppComponent />
       </LayOutComponent>
     </>
   )
