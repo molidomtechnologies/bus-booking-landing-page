@@ -1,3 +1,4 @@
+import LayOutComponent from "./Layout/Index"
 
 
 function App() {
@@ -5,7 +6,9 @@ function App() {
 
   return (
     <>
-        <h1 className=" text-center text-3xl "> Hello Bus booking </h1>
+      <LayOutComponent>
+        <h1>App</h1>
+      </LayOutComponent>
     </>
   )
 }
