@@ -1,11 +1,12 @@
 import AppleIcon from '../assets/ios-badge-en.svg.png'
 import AndroidIcon from '../assets/android-badge-en.svg.png'
 
+//  THIS COMPONENT THE LINKS THE APP FOR THE USERS 
 export const MobileAppComponent = () => {
-  return (
+  return ( 
     <>
       <section className="bg-white">
-        <div className="container  grid grid-cols-1 gap-6 mx-auto py-12 sm:py-16 lg:py-24 lg:grid-cols-2  ">
+        <div className="container  grid grid-cols-1 gap-6 mx-auto py-12 sm:py-16 lg:py-10 lg:grid-cols-2  ">
           <div className="flex items-center justify-center mt-8 lg:mt-0">
             {/* mobile mockup */}
             <div className="relative mx-auto border-gray-800  bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
