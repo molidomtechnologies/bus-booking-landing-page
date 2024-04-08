@@ -61,22 +61,15 @@ const NavigationBarComponent = () => {
               </button>
             </div>
 
-            {/* END TOGGLE MENU */}
+            {/* NAV ITEM IN THE BIG SCREEN  AND WE HIDE IT WHEN TO SMALL SCREEN  */}
 
-            {/* 
-              
-              ===============================
-              NAV ITEMS 
-              ======================
-            
-              */}
             <div className="hidden  md:block md:ml-6">
               <div className="flex space-x-4">
                 {/* HOME */}
 
                 <button
                  
-                  className="px-3 py-2 flex flex-row rounded-md text-sm text-gray-700"
+                  className="px-3 py-2 flex flex-row  hover:bg-slate-900 hover:text-white rounded-md text-sm text-gray-700"
                 >
                   <span> Home </span>
                 </button>
@@ -84,7 +77,7 @@ const NavigationBarComponent = () => {
                
 
                 {/* About */}
-                <button className="px-3 py-2 flex flex-row rounded-md text-sm text-gray-700">
+                <button className="px-3 py-2   hover:bg-slate-900 hover:text-white flex flex-row rounded-md text-sm text-gray-700">
                   <span>About</span>
                 </button>
 
@@ -96,17 +89,6 @@ const NavigationBarComponent = () => {
           
           </div>
         </div>
-
-        {/*
-          
-          *
-          =========================
-          MOBILE NAVIGATION  Menu
-         ===================
-         
-        
-          
-          */}
 
         <section className="z-50 ">
           <div
